@@ -1,0 +1,455 @@
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Dynatable/0.3.1/jquery.dynatable.min.js"></script>
+</head>
+<body>
+<table id="t1">
+  <tr>
+    <th>Name &amp; Link</th>
+    <th>Overall Rating</th>
+    <th>Protocol</th>
+    <th>OS</th>
+    <th>Federation/Decentralized</th>
+    <th>Group chat</th>
+    <th>Multi-device</th>
+    <th>Offline messages</th>
+    <th>Forward secrecy</th>
+    <th>Recent Audit</th>
+    <th>Anonymity</th>
+    <th>Protocol rating</th>
+    <th>Systems support</th>
+    <th>Usability</th>
+    <th>Verification</th>
+  </tr>
+  <tr>
+    <td>ChatSecure</td>
+    <td>4,3</td>
+    <td>XMPP+Omemo</td>
+    <td>iOS</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>5</td>
+    <td>3</td>
+    <td>5</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>Conversations</td>
+    <td>4,3</td>
+    <td>XMPP+Omemo</td>
+    <td>Android</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>5</td>
+    <td>3</td>
+    <td>5</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>Riot</td>
+    <td>4,2</td>
+    <td>Matrix+Olm</td>
+    <td>Android</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>5</td>
+    <td>4</td>
+    <td>4</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>Riot</td>
+    <td>4,2</td>
+    <td>Matrix+Olm</td>
+    <td>iOS</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>5</td>
+    <td>4</td>
+    <td>4</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>many</td>
+    <td>3,7</td>
+    <td>XMPP+PGP</td>
+    <td>iOS, Android, Linux, MacOS, Windows</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☐ no</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>4</td>
+    <td>4</td>
+    <td>4</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Riot</td>
+    <td>3,7</td>
+    <td>Matrix+Olm</td>
+    <td>any Browser</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>5</td>
+    <td>4</td>
+    <td>3</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Riot</td>
+    <td>3,7</td>
+    <td>Matrix+Olm</td>
+    <td>Linux, MacOS, Windows</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>5</td>
+    <td>4</td>
+    <td>3</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Gajim</td>
+    <td>3,5</td>
+    <td>XMPP+Omemo</td>
+    <td>Linux, MacOS, Windows</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>5</td>
+    <td>3</td>
+    <td>3</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Wire</td>
+    <td>3,5</td>
+    <td>Proteus</td>
+    <td>Linux, MacOS, Windows</td>
+    <td>☐ no (devs against it)</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☐ no</td>
+    <td>☑ yes</td>
+    <td>3</td>
+    <td>5</td>
+    <td>4</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Wire</td>
+    <td>3,5</td>
+    <td>Proteus</td>
+    <td>any Browser</td>
+    <td>☐ no (devs against it)</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☐ no</td>
+    <td>☑ yes</td>
+    <td>3</td>
+    <td>5</td>
+    <td>4</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Wire</td>
+    <td>3,5</td>
+    <td>Proteus</td>
+    <td>iOS, Android</td>
+    <td>☐ no (devs against it)</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☐ no</td>
+    <td>☑ yes</td>
+    <td>3</td>
+    <td>5</td>
+    <td>4</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>many</td>
+    <td>3,3</td>
+    <td>XMPP+OTR</td>
+    <td>iOS, Android, Linux, MacOS, Windows</td>
+    <td>☑ yes</td>
+    <td>☐ no</td>
+    <td>☐ no</td>
+    <td>☐ no</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>2</td>
+    <td>4</td>
+    <td>5</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Signal</td>
+    <td>3,3</td>
+    <td>SignalProtocol</td>
+    <td>Android</td>
+    <td>☐ no (devs against it)</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☐ no</td>
+    <td>3</td>
+    <td>3</td>
+    <td>4</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>Signal</td>
+    <td>3,3</td>
+    <td>SignalProtocol</td>
+    <td>iOS</td>
+    <td>☐ no (devs against it)</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☐ no</td>
+    <td>3</td>
+    <td>3</td>
+    <td>4</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>Telegram</td>
+    <td>3,0</td>
+    <td>Telegram Protocol</td>
+    <td>iOS, Android, any Browser</td>
+    <td>☐ no (devs against it)</td>
+    <td>☐ no (not encrypted)</td>
+    <td>☐ no (not encrypted)</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☐ no</td>
+    <td>1</td>
+    <td>4</td>
+    <td>5</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>RetroShare</td>
+    <td>2,8</td>
+    <td>RetroShare</td>
+    <td>Linux, MacOS, Windows</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☐ no</td>
+    <td>☑ yes</td>
+    <td>4</td>
+    <td>0</td>
+    <td>3</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>Signal</td>
+    <td>2,5</td>
+    <td>SignalProtocol</td>
+    <td>Chrome</td>
+    <td>☐ no (devs against it)</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☐ no</td>
+    <td>3</td>
+    <td>3</td>
+    <td>2</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Cryptocat</td>
+    <td>2,3</td>
+    <td>XMPP+Omemo variant</td>
+    <td>Linux, MacOS, Windows</td>
+    <td>☐ no</td>
+    <td>☐ no (in progress)</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>3</td>
+    <td>0</td>
+    <td>3</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Silent Phone</td>
+    <td>2,3</td>
+    <td>ZRTP</td>
+    <td>iOS, Android</td>
+    <td>☐ no</td>
+    <td>☐ no</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☐ no</td>
+    <td>2</td>
+    <td>0</td>
+    <td>4</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Antitode</td>
+    <td>2,0</td>
+    <td>Tox Procotol</td>
+    <td>iOS</td>
+    <td>☑ yes</td>
+    <td>☐ no</td>
+    <td>☑ yes</td>
+    <td>☐ no</td>
+    <td>☑ yes</td>
+    <td>☐ no</td>
+    <td>☑ yes</td>
+    <td>2</td>
+    <td>2</td>
+    <td>2</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Antox</td>
+    <td>2,0</td>
+    <td>Tox Procotol</td>
+    <td>Android</td>
+    <td>☑ yes</td>
+    <td>☐ no</td>
+    <td>☑ yes</td>
+    <td>☐ no</td>
+    <td>☑ yes</td>
+    <td>☐ no</td>
+    <td>☑ yes</td>
+    <td>2</td>
+    <td>2</td>
+    <td>2</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>qTox</td>
+    <td>2,0</td>
+    <td>Tox Procotol</td>
+    <td>Linux, MacOS, Windows</td>
+    <td>☑ yes</td>
+    <td>☐ no</td>
+    <td>☑ yes</td>
+    <td>☐ no</td>
+    <td>☑ yes</td>
+    <td>☐ no</td>
+    <td>☑ yes</td>
+    <td>2</td>
+    <td>2</td>
+    <td>2</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>uTox</td>
+    <td>2,0</td>
+    <td>Tox Procotol</td>
+    <td>Linux, MacOS, Windows</td>
+    <td>☑ yes</td>
+    <td>☐ no</td>
+    <td>☑ yes</td>
+    <td>☐ no</td>
+    <td>☑ yes</td>
+    <td>☐ no</td>
+    <td>☑ yes</td>
+    <td>2</td>
+    <td>2</td>
+    <td>2</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Ricochet</td>
+    <td>1,7</td>
+    <td>Ricochet Protocol</td>
+    <td>Linux, MacOS, Windows</td>
+    <td>☑ yes</td>
+    <td>☐ no</td>
+    <td>☐ no</td>
+    <td>☐ no</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>☑ yes</td>
+    <td>2</td>
+    <td>0</td>
+    <td>3</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>Surespot</td>
+    <td>1,5</td>
+    <td>Surespot Protocol</td>
+    <td>iOS, Android</td>
+    <td>☐ no</td>
+    <td>☐ no</td>
+    <td>☐ no</td>
+    <td>☐ no</td>
+    <td>☑ yes</td>
+    <td>☐ no</td>
+    <td>☑ yes</td>
+    <td>0</td>
+    <td>0</td>
+    <td>3</td>
+    <td>3</td>
+  </tr>
+</table>
+<script>
+$( document ).ready(function() {
+    $('#t1').dynatable();
+});
+</script>
+</body>
